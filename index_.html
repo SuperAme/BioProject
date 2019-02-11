@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+    
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Lista Clientes</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Date Time Picker CSS -->        
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+	
+	<!-- Main Style CSS -->
+	<link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+    body {
+        padding-top: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo" href="index.html">
+                <span>Bienvenido:</span>
+					<!--<img src="img/genelec_logo.png" alt="Logo GENELEC">-->
+				</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+			<!--
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+    <div class="row">
+       <form id="consulta-clientes" action="consulta.php" method="post">
+       <div class="col-md-4 div">
+          <h1>Clientes</h1>
+           <div class="table-responsive">
+              <table class="table">
+                   <tr>
+                     <th>Status</th>                      
+                       <th>Cliente</th>                                             
+                   </tr>
+                   <tbody id="resgistro_trs" class="list"></tbody>                           
+              </table>                        
+              <ul class="pagination"></ul>
+           </div>
+       </div>
+       </form>
+       <form id="consulta-cotizaciones" action="consulta.php" method="post">
+          <div class="col-md-4 div" >
+           <h1>Cotizaciones</h1>
+            <div class="table-responsive">
+              <table class="table">
+                  <tr>
+                     <th>Cotizaciones</th>                        
+                  </tr>                           
+              </table>                        
+              <ul class="pagination"></ul>
+            </div>
+          </div>
+       </form>
+        <form id="consulta-cotizaciones" action="consulta.php" method="post">
+          <div class="col-md-4 div" >
+           <h1>Pedidos</h1>
+            <div class="table-responsive">
+              <table class="table">
+                  <tr>
+                     <th>Pedidos</th>                        
+                  </tr>                           
+              </table>                        
+              <ul class="pagination"></ul>
+            </div>
+          </div>
+       </form>
+    </div>
+
+
+       <!-- <div class="row">
+			<form id="consulta-form" action='consulta.php' method='POST'>
+				<div class="filtro-consulta col-md-12">
+					<h1 id="title-filtro">Lista Clientes y Cotizaciones</h1>
+                    <button type="button" class="btn btn-default">Default</button>
+                    <div class="table-responsive">
+                       <table class="table">
+                            <tr>
+                                <th>País</th>
+                                <th>Capital</th>
+                                <th>Superficie</th>
+                                <th>Habitantes</th>
+                                <th>Descripción</th>
+                            </tr>                           
+                       </table>
+                       <table class="table">
+                            <tr>
+                                <th>País</th>
+                                <th>Capital</th>
+                                <th>Superficie</th>
+                                <th>Habitantes</th>
+                                <th>Descripción</th>
+                            </tr>                           
+                       </table>                                                
+                        <ul class="pagination"></ul>
+                    </div>
+                    
+				</div>
+			</form>
+			<div class="result col-md-12">
+            </div>
+        </div>-->
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+    
+    <footer class="footer">
+        <div class="container">
+            <span>Desarrollo por: <a href="http://www.pass.com.mx" target="_blank">PASS Consultores</a></span>
+        </div>
+    </footer>
+    <script src="test.js"></script>
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	<!-- For Date Picker js -->         
+	<script src="js/moment.js"></script>
+	<script src="js/locale/es.js"></script>
+	<script src="js/transition.js"></script>
+	<script src="js/collapse.js"></script>
+	<script src="js/bootstrap-datetimepicker.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			/*$('#datetimepicker1').datetimepicker({
+				format: "YYYY/MM",
+				showTodayButton: true,
+				locale: "es",
+				allowInputToggle: true
+			});*/
+		});
+	</script>
+    
+    <!-- List JS -->
+    <script src="js/list.min.js"></script>
+	
+	<!-- Main JS -->
+    <script src="js/index.js"></script>
+	
+	<!-- Pagination JS -->
+	<!--
+    <script src="js/pagination.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('#pagination-container').pagination({
+				dataSource: rows,
+				callback: function(data, pagination) {
+					// template method of yourself
+					var html = template(data);
+					$('#data-container').html(html);
+				}
+			});
+			function template(data) {
+				var html = '<tr>';
+				$.each(data, function(index, item){
+					html += '<td>' + item + '</td>';
+				});
+				html += '<tr>';
+				return html;
+			}
+		});
+	</script>
+	-->
+</body>
+
+</html>

@@ -1,0 +1,367 @@
+.loader{   
+    display: none;   
+}
+#LoginForm{
+  background-image: url('../img/bg-01.jpg');  
+  background-position: center;
+ background-size: cover; 
+}
+#userLogin{    
+    text-align: right;
+}
+@media only screen and (max-width: 600px){
+    .panel{
+        background-color: transparent;
+    }
+    
+    #LoginForm h1{
+        border: none;
+        margin-left: -30px;
+        width: 140%;        
+    }
+    #userLogin{    
+    text-align: left;
+    }
+    .navbar {
+    height: 130px !important;    
+    }
+    #div-headers{
+        margin-top: 50px!important;
+    }
+    #tabla_partidas{
+        background-color: aqua;
+        width: 100px;
+        overflow-x: scroll;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+   #LoginForm{
+       background-image: url('../img/bg-01.jpg');
+       background-size: auto;  
+    }
+}
+a{
+  cursor: pointer;
+}
+#tip1{
+    background-color: #ffcc99;
+padding: 10px;
+display: none;
+position: absolute;
+}
+
+.table_pedidos,.table_cotizaciones, .table_productos,.table_clie{ 
+    overflow: scroll;    
+    width: 100%;    
+}
+.table_pedidos th,.table_cotizaciones th,.table_productos th,.table_clie th{
+    text-align: center;
+    font-size: 18px;    
+    background-color: #a8c5f5;
+    border-radius: 20px!important;
+}
+.table_clientes td,tr,.table_pedidos td,tr,.table_cotizaciones td,tr,.table_productos td,tr,.table_clie td,tr{    
+	text-align: center;
+    font-size: 18px;    
+}
+tr:nth-child(even){background-color: #f2f2f2}
+th:first-child{
+    width: 15%;
+}
+.container {
+    width: 85%;    
+}
+h1{
+   border-radius: 20px;   
+   text-align: center;
+}
+h1:hover{    
+   background: gray;
+   cursor: pointer; 
+}
+
+#span-header{    
+    font-size: 18px;
+    color: white;
+}
+#span-header:hover{
+    color: skyblue;
+}
+#btn_mod{
+    margin-top: 10px;
+    float: right;
+}
+img{
+    width: 110px;
+    height: 60px;
+}
+.table_productos{
+    margin-top: 10px;
+}
+
+.nav-sup {
+    color: white;    
+    justify-content: flex-end;    
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+#form{
+    border: 1px solid black;
+}
+
+.datos-input{
+    width: 100%;
+}
+
+
+.error-template {padding: 40px 15px;text-align: center;}
+.error-actions {margin-top:15px;margin-bottom:15px;}
+.error-actions .btn { margin-right:10px; }
+
+.navbar {
+    height: 95px;
+}
+#div-headers{
+    margin-top: 30px;
+}
+/*
+input[name=query-submit] {
+	margin-top: 25px;
+}
+
+#title-filtro {
+	margin-bottom: 30px;
+}
+
+.tabla-consulta {
+	margin-top: 20px;
+}
+
+.navbar {
+    height: 65px;
+}
+
+.navbar-brand > img {
+    margin-top: -26px;
+}*/
+
+/*LOGIN CSS*/
+
+.card-container.card {
+    max-width: 350px;
+    padding: 40px 40px;
+}
+
+.card {
+    background-color: #F7F7F7;
+    /* just in case there no content*/
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.form-signin #inputVendedor,
+.form-signin #inputPassword {
+    direction: ltr;
+    height: 44px;
+    font-size: 16px;
+}
+
+
+.form-signin input[type=password],
+.form-signin input[type=text],
+.form-signin button {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+    border-color: rgb(104, 145, 162);
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(104, 145, 162);
+}
+
+/*FIN LOGIN CSS*/
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: right;
+    height: 60px;
+    line-height: 60px;    
+    background-color: dimgray;
+}
+footer span, footer a{
+    color: white;
+}
+
+/*PAGINA DE ERROR*/
+
+#notfound {
+  position: relative;
+  height: 100vh;
+}
+
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.notfound {
+  max-width: 410px;
+  width: 100%;
+  text-align: center;
+}
+
+.notfound .notfound-404 {
+  height: 280px;
+  position: relative;
+  z-index: -1;
+}
+
+.notfound .notfound-404 h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 230px;
+  margin: 0px;
+  font-weight: 900;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: url('../img/bg.jpg') no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.notfound h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.notfound p {
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+.notfound a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #0046d5;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 40px;
+  color: #fff;
+  font-weight: 700;
+  -webkit-box-shadow: 0px 4px 15px -5px #0046d5;
+          box-shadow: 0px 4px 15px -5px #0046d5;
+}
+
+
+#tabla_partidas{
+    width: 900px;
+    margin: auto;
+    text-align: center;    
+}
+#tabla_partidas th{    
+    text-align: center;
+    margin: auto;
+}
+/*#tabla_partidas td{
+    text-align: center;
+    border:1px solid red;    
+}*/
+
+
+
+@media only screen and (max-width: 767px) {
+    .notfound .notfound-404 {
+      height: 142px;
+    }
+    .notfound .notfound-404 h1 {
+      font-size: 112px;
+    }
+   
+}
+/*Seccion productos*/
+.observ{
+    /*width: 32%;
+    overflow: hidden;
+    white-space: nowrap;*/    
+}
+
+.cant{
+    width: 70px;    
+}
+.descrip{
+    width: 440px;
+    overflow: hidden;
+    white-space: nowrap;     
+}
+.cve_art{
+    width: 80px;
+}
+#subtotal,.precio{
+    width: 70px;       
+}
+#head_prod{
+    width: 100%;
+    margin-bottom: -50px;
+    border-bottom: 1px solid gray;
+}
+#tabla_productos{
+    margin-top: 50px;
+    width: 98%;
+    margin-left: 15px;
+    margin-right:25px;
+}
+#select_cli{
+    width: 400px;
+}
+.cve_art_head{
+    width: 80px;
+}
+.descrip_head{
+    width: 440px;
+}
+.precio_head,.cant_head,#subtotal_head{   
+    width: 90px;
+}
+.observ_head{
+    width:400px;
+    
+}
