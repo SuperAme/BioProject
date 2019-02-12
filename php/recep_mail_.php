@@ -24,7 +24,7 @@ $mail->IsSMTP();
 $mail->Host = "pass.com.mx";
 $mail->SMTPAuth = true;
 $mail->Username = 'contacto@pass.com.mx';
-$mail->Password = '4jsPVh4r8xhQ';
+$mail->Password = '---';
 //$mail->SMTPSecure = 'tls';
 $mail->Port = 26;
 
